@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: azure-vote-back
-        image: redis
+        image: az300acr.azurecr.io/redis
         resources:
           requests:
             cpu: 100m
@@ -52,7 +52,7 @@ spec:
     spec:
       containers:
       - name: azure-vote-front
-        image: microsoft/azure-vote-front:v1
+        image: az300acr.azurecr.io/azure-vote-front:v1
         resources:
           requests:
             cpu: 100m
